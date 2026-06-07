@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SchoolApp.StudentDetailPage"
+             Title="Student Detail">
+
+    <VerticalStackLayout Padding="30" Spacing="15">
+
+        <Label x:Name="NameLabel"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label Text="Student details page"
+               FontSize="16"
+               TextColor="Gray"
+               HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

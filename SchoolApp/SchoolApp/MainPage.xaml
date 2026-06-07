@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SchoolApp.MainPage"
+             Title="SchoolApp">
+
+    <VerticalStackLayout Padding="30" Spacing="15">
+
+        <Label Text="Welcome to SchoolApp"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <!-- L14: кнопка навигации на список студентов -->
+        <Button Text="Open students list"
+                Clicked="OnStudentsClicked" />
+
+        <!-- L15/L16: карточка имени (данные из Person ViewModel) -->
+        <BoxView HeightRequest="1" Color="Gray" Margin="0,10" />
+
+        <Label Text="Name card (L15 / L16)" FontSize="14" TextColor="Gray" />
+
+        <Entry Text="{Binding Name, Mode=TwoWay}"
+               Placeholder="Enter name" />
+
+        <Label Text="{Binding Name}"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label Text="{Binding City}"
+               FontSize="16"
+               HorizontalOptions="Center" />
+
+        <!-- L16 бонус: кнопка "Shout the name" -->
+        <Button Text="Shout the name"
+                Clicked="OnShoutClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>
